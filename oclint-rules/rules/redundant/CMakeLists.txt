@@ -3,6 +3,7 @@ SET(LIST_OF_RULES
     RedundantIfStatement
     RedundantLocalVariable
     RedundantNilCheck
+    UnnecessaryBooleanLiteral
     UnnecessaryElseStatement
     UselessParentheses
     )
