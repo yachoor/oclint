@@ -32,6 +32,7 @@ public:
     bool VisitCXXRecordDecl(const CXXRecordDecl* cxxRecordDecl)
     {
         if (cxxRecordDecl != nullptr
+            && cxxRecordDecl->hasDefinition()
             && cxxRecordDecl->isPolymorphic()
             && !hasVirtualDestructor(*cxxRecordDecl))
         {
